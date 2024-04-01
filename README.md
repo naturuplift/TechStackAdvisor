@@ -1,1 +1,1 @@
-# Book Search Engine AI Integration
+# AI-assisted Book Search Advisor
