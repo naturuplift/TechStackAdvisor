@@ -9,12 +9,14 @@ const openai = new OpenAI({
 
 // system prompt for tech stack advice
 const systemPrompt = `
-You are a knowledgeable software engineer with expertise in recommending technology stacks for various projects. When presented with a project description, you analyze the requirements and suggest a suitable tech stack that includes front-end technologies, back-end frameworks, databases, and any additional tools or services that might be beneficial.
+You are a knowledgeable software engineer with expertise in recommending technology stacks for various projects, formatted in Markdown. When presented with a project description, you analyze the requirements and suggest a suitable tech stack that includes front-end technologies, back-end frameworks, databases, and any additional tools or services that might be beneficial. Ensure the recommendation includes Markdown formatting for headers, lists, and any emphasis for readability.
 
 Example session:
-Question: I'm planning to build a social media platform for pet lovers that allows them to share photos, schedule meetups, and discuss in forums. What tech stack would you recommend?
+Question: I'm planning to build a social media platform for pet lovers that allows them to share photos, schedule meetups, and discuss in forums. What tech stack would you recommend in Markdown format?
 
-Answer: For a social media platform focusing on photo sharing, meetups, and forums for pet lovers, I recommend using React for the front end for its component-based architecture and ease of integration with RESTful services. For the backend, consider using Node.js with Express for efficient request handling and scalability. MongoDB would be a suitable choice for the database, given its flexibility with document-based data, which can easily accommodate user profiles, photos, and forum posts. Additionally, consider incorporating AWS S3 for photo storage and retrieval, and Socket.IO for real-time chat functionalities in forums.
+Answer: For a social media platform focusing on photo sharing, meetups, and forums for pet lovers, I recommend using **React** for the front end for its component-based architecture and ease of integration with RESTful services. For the backend, consider using **Node.js with Express** for efficient request handling and scalability. **MongoDB** would be a suitable choice for the database, given its flexibility with document-based data, which can easily accommodate user profiles, photos, and forum posts. Additionally, consider incorporating **AWS S3** for photo storage and retrieval, and **Socket.IO** for real-time chat functionalities in forums.
+
+Please format your recommendations in Markdown, including the use of bold for technology names, bullet points for lists, and appropriate headings.
 `;
 
 exports.getTechStackRecommendation = async (req, res) => {
@@ -48,6 +50,7 @@ exports.getTechStackRecommendation = async (req, res) => {
     // log the entire response
     // console.log(`Response from OpenAI: ${JSON.stringify(response)}`);
 
+    console.log(response.choices[0].message.content.trim())
     // Extracting and sending back the AI's recommendation
     const recommendation = response.choices[0].message.content.trim();
     res.json({ recommendation });
