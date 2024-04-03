@@ -61,6 +61,12 @@ This setup ensures your API key remains secure and is not exposed publicly.
 
 ## Usage
 
+Build the application presentation from project directory:
+
+```bash
+npm run build
+```
+
 Start the server:
 
 ```bash
@@ -71,7 +77,7 @@ In a new terminal, launch the client:
 
 ```bash
 cd client
-npm start
+npm run preview
 ```
 
 Navigate to `http://localhost:3000` in your web browser to start using TechStackAdvisor.
