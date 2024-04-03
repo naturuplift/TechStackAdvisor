@@ -76,6 +76,14 @@ npm start
 
 Navigate to `http://localhost:3000` in your web browser to start using TechStackAdvisor.
 
+You can enter the project that you are looking to implement:
+
+![image](https://github.com/naturuplift/TechStackAdvisor/assets/23546356/7392e9f0-4d15-45fb-b6ed-dfeeea7073a2)
+
+Then application make use of OpenAI to advise on tech stacks for the project:
+
+![image](https://github.com/naturuplift/TechStackAdvisor/assets/23546356/e0010f77-d7a7-4979-8dbb-b3b43b7f3ecb)
+
 ## Contributing
 
 Contributions are welcome! Feel free to fork the repository, make changes, and submit pull requests. If you have suggestions or encounter issues, please open an issue in the repository.
