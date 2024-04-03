@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Container, Col, Form, Button, Row } from 'react-bootstrap';
+import ReactMarkdown from 'react-markdown'; // Import ReactMarkdown
 
 const SearchBooks = () => {
   const [searchInput, setSearchInput] = useState('');
@@ -7,7 +8,6 @@ const SearchBooks = () => {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-
     if (!searchInput) {
       return false;
     }
@@ -61,7 +61,7 @@ const SearchBooks = () => {
       {/* Container to display the recommendation */}
       <Container>
         <h2 className='pt-5'>Recommendation:</h2>
-        <p>{recommendation || 'Enter your project details to get a recommendation.'}</p>
+        <ReactMarkdown className='recommendation'>{recommendation || 'Enter your project details to get a recommendation.'}</ReactMarkdown>
       </Container>
     </>
   );

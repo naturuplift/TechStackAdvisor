@@ -16,9 +16,8 @@ h6 {
   font-style: italic;
 }
 
-/* App.css */
 .recommendation {
-  white-space: pre-line; /* Preserve line breaks as they appear in your recommendation text */
+  white-space: pre-line;
   padding: 1rem;
   background-color: #f8f9fa;
   border-radius: 5px;
@@ -30,5 +29,6 @@ h6 {
 }
 
 .recommendation p {
-  color: #6c757d;
+  color: #333;
+  line-height: 1.6;
 }
