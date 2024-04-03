@@ -1,4 +1,4 @@
-# Tech Stack AI-Advisor
+# Tech Stack AI Advisor
 
 <br/>
 <p align="center">
