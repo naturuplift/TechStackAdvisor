@@ -15,3 +15,20 @@ h6 {
   font-weight: 300;
   font-style: italic;
 }
+
+/* App.css */
+.recommendation {
+  white-space: pre-line; /* Preserve line breaks as they appear in your recommendation text */
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.recommendation h2 {
+  color: #495057;
+}
+
+.recommendation p {
+  color: #6c757d;
+}

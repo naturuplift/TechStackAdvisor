@@ -20,6 +20,8 @@
 # Private Node Modules
 node_modules/
 creds.js
+model_training
+book_search.py
  
 # Private Files
 # *.json

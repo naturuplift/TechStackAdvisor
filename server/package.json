@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "server-ai-assisted-book-search-advisor",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -8,13 +8,15 @@
     "watch": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Arnaldo Sepulveda",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^4.0.1",
+    "dotenv": "^16.4.5",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^7.0.2"
+    "mongoose": "^7.0.2",
+    "openai": "^4.32.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
