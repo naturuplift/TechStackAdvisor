@@ -90,6 +90,8 @@ Then application make use of OpenAI to advise on tech stacks for the project:
 
 ![image](https://github.com/naturuplift/TechStackAdvisor/assets/23546356/e0010f77-d7a7-4979-8dbb-b3b43b7f3ecb)
 
+**Note:** Used Google Search Books as a boiler plate for this project and some functions need refactoring. 
+
 ## Contributing
 
 Contributions are welcome! Feel free to fork the repository, make changes, and submit pull requests. If you have suggestions or encounter issues, please open an issue in the repository.
