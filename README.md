@@ -94,7 +94,7 @@ Then application make use of OpenAI to advise on tech stacks for the project:
 
 ## Contributing
 
-Contributions are welcome! Feel free to fork the repository, make changes, and submit pull requests. If you have suggestions or encounter issues, please open an issue in the repository.
+Contributions are welcome! Feel free to fork the repository, make changes, and submit pull requests. If you have suggestions or encounter issues, please open an issue in the repository. Thank you!
 
 ## License
 
